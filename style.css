@@ -1,6 +1,7 @@
 :root {
 	--text: #34312f;
 	--background: #efefe3;
+	--dropdown: #85262d;
 }
 
 html {
@@ -41,4 +42,41 @@ nav {
 	animation-name: all;
 	color: var(--text);
 }
+button {
+	animation-duration: 3s;
+	animation-name: all;
+	padding: 0;
+	border: none;
+	font-family: Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 20pt;
+	color: var(--dropdown)
+}
 
+.dropdown {
+	display: inline-block;
+	position: relative;
+  }
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+
+  }
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  .dropdown-content a {
+	display: block;
+	color: #000000;
+	background-color: var(--background);
+	padding: 5px;
+	text-decoration: none;
+  }
+  .dropdown-content a:hover {
+	display: block;
+	color: #FFFFFF;
+	background-color: var(--dropdown);
+  }
