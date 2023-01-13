@@ -36,3 +36,9 @@ address {
 	color: var(--text);
 }
 
+nav {
+	animation-duration: 3s;
+	animation-name: all;
+	color: var(--text);
+}
+
