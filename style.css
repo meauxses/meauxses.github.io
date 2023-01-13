@@ -1,0 +1,38 @@
+:root {
+	--text: #34312f;
+	--background: #efefe3;
+}
+
+html {
+	font-family: Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 20pt;
+	background-color: var(--background);
+	color: var(--text);
+}
+body {
+	animation-duration: 6s;
+	animation-name: all;
+}
+@keyframes all {
+	from {
+		color: var(--background);
+	}
+	to {
+		color: var(--text);
+	}
+}
+
+h1 {
+	animation-duration: 3s;
+	animation-name: all;
+	color: var(--text);
+}
+
+/* contact formatting */
+address {
+	animation-duration: 3s;
+	animation-name: all;
+	color: var(--text);
+}
+
